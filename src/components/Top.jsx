@@ -7,6 +7,7 @@ import './styles/App.css'
 function Top() {
     return (
         <div>
+           
             <Grid container direction='column' className='top-cont'>
                 <img src={TopImg} alt="All your files"/>
                 <h1>All your files in one secure location, accessible anywhere.</h1>

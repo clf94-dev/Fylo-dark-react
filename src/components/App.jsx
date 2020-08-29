@@ -2,6 +2,7 @@ import React from 'react'
 import './styles/App.css'
 import Navbar from './Navbar';
 import Top from './Top';
+import Features from './Features.jsx';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <div>
            <Navbar /> 
            <Top/>
+           <Features/>
         </div>
     )
 }
