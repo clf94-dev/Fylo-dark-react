@@ -4,7 +4,8 @@ import Navbar from './Navbar';
 import Top from './Top';
 import Features from './Features.jsx';
 import Middle from './Middle';
-import Testimonials from './Testimonials';
+import Testimonials from './Testimonials.jsx';
+import Cta from './Cta';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
            <Features/>
            <Middle/>
            <Testimonials/>
+           <Cta/>
         </div>
     )
 }
