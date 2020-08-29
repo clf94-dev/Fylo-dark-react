@@ -3,6 +3,7 @@ import './styles/App.css'
 import Navbar from './Navbar';
 import Top from './Top';
 import Features from './Features.jsx';
+import Middle from './Middle';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
            <Navbar /> 
            <Top/>
            <Features/>
+           <Middle/>
         </div>
     )
 }
