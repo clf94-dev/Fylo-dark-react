@@ -69,3 +69,53 @@ $body: 'Open Sans';
         }
     }
 }
+
+//------------------Top section------------------
+.top-cont {
+    background-color: $dark-blue-in-em-su-bg;
+    padding: 5% 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @media screen and (max-width: 756px) {
+        padding: 5% 8%;
+    }
+    img {
+        width: 85%;
+        @media screen and (max-width: 756px) {
+            width: 100%;
+        }
+    }
+    h1 {
+        margin: 2% 4% 3%;
+        @media screen and (max-width: 756px) {
+            margin: 3% auto;
+        }
+        color: $white;
+        font-family: $heading;
+        font-weight: $weight7;
+        font-size: 30px;
+    }
+    p {
+        margin: 1% 20%;
+        @media screen and (max-width: 756px) {
+            margin: 3% 4%;
+        }
+        color: $white;
+        font-family: $body;
+        font-weight: $weight4;
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    Button {
+        margin: 2% auto;
+        @media screen and (max-width: 756px) {
+            margin: 3% auto;
+        }
+        color: $white;
+        background-image: linear-gradient(90deg, $cyan, $blue);
+        width: 300px;
+        height: 50px;
+        border-radius: 25px;
+    }
+}
