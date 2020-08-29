@@ -61,6 +61,9 @@ $body: 'Open Sans';
                 display: flex;
                 padding: 3%;
                 margin-right: 1%;
+                &:hover {
+                    color: $cyan;
+                }
                 @media screen and (max-width: 756px) {
                     padding: 3% 1.5%;
                     margin-right: 0;
@@ -253,7 +256,13 @@ $body: 'Open Sans';
 //-----------------Cta Section--------------ç
 .cta-section {
     background-color: $dark-blue-main-bg;
-    padding: 1% 5%;
+    @media screen and (min-width: 756px) {
+        height: 250px;
+    }
+    padding: 0 5%;
+    @media screen and (max-width: 756px) {
+        padding: 1% 5%;
+    }
     justify-content: center;
     .cta-cont {
         background-color: $dark-blue-test-bg;
@@ -261,6 +270,8 @@ $body: 'Open Sans';
         @media screen and (min-width: 756px) {
             height: 250px;
             width: 60%;
+            position: relative;
+            top: 30px;
         }
         padding: 3% 6%;
         text-align: center;
@@ -285,12 +296,81 @@ $body: 'Open Sans';
             padding-left: 20px;
         }
         Button {
-            margin: 1%;
-            background-image: linear-gradient(90deg, $cyan, $blue);
+            margin: 3% 1%;
             width: 100%;
+            text-transform: none;
+            font-family: $heading;
+            font-weight: $weight7;
+            background-image: linear-gradient(90deg, $cyan, $blue);
+            @media screen and (min-width: 756px) {
+                width: 95%;
+                position: relative;
+                left: 10px;
+            }
             height: 50px;
             color: $white;
             border-radius: 25px;
+        }
+    }
+}
+
+//--------------  Footer Section -----------------------
+.footer-cont {
+    background-color: $dark-blue-footer-bg;
+    color: $white;
+    padding: 10% 2%;
+    @media screen and (max-width: 756px) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo,
+    {
+        margin: 2% 5%;
+    }
+    .location-logo {
+        margin: 2% 15%;
+    }
+    p {
+        font-family: $body;
+        font-size: 14px;
+        font-weight: $weight4;
+        margin-bottom: 10px;
+        padding: 1% 15%;
+        @media screen and (min-width: 756px) {
+            padding-right: 20%;
+        }
+    }
+    .footer-links {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: $body;
+        font-weight: $weight4;
+        font-size: 14px;
+        cursor: pointer;
+        .contact-info {
+            text-align: start;
+            font-family: $body;
+            font-weight: $weight4;
+            font-size: 14px;
+            @media screen and (max-width: 756px) {
+                align-items: center;
+            }
+        }
+        i {
+            margin: 1% 2%;
+            &:hover {
+                color: $cyan;
+            }
+        }
+    }
+    .links:hover {
+        color: $cyan;
+    }
+    @media screen and (max-width: 756px) {
+        .contact-row {
+            padding-left: 30%;
         }
     }
 }

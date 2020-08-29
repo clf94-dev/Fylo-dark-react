@@ -6,6 +6,7 @@ import Features from './Features.jsx';
 import Middle from './Middle';
 import Testimonials from './Testimonials.jsx';
 import Cta from './Cta';
+import Footer from './Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
            <Middle/>
            <Testimonials/>
            <Cta/>
+           <Footer/>
         </div>
     )
 }
