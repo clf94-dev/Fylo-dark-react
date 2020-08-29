@@ -1,0 +1,71 @@
+$dark-blue-in-em-su-bg: hsl(217, 28%, 15%);
+$dark-blue-main-bg:hsl(218, 28%, 13%);
+$dark-blue-footer-bg: hsl(216, 53%, 9%);
+$dark-blue-test-bg: hsl(219, 30%, 18%);
+$white: hsl(0, 0%, 100%);
+$cyan:hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$weight4:400;
+$weight7:700;
+$heading: 'Raleway';
+$body: 'Open Sans';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//---------------------Navbar Section -------------
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    background-color: $dark-blue-in-em-su-bg;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        max-width: 1500px;
+        img {
+            display: flex;
+            justify-self: start;
+            @media screen and (max-width: 756px) {
+                width: 35%;
+            }
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            text-align: center;
+            width: 70vw;
+            @media screen and (max-width: 756px) {
+                width: 50vw;
+            }
+            justify-content: end;
+            margin-right: 2rem;
+            @media screen and (max-width: 756px) {
+                margin-right: 0.5rem;
+            }
+            .nav-item {
+                color: $white;
+                font-family: $heading;
+                font-weight: $weight7;
+                cursor: pointer;
+                display: flex;
+                padding: 3%;
+                margin-right: 1%;
+                @media screen and (max-width: 756px) {
+                    padding: 3% 1.5%;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
