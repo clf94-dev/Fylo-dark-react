@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Top from './Top';
 import Features from './Features.jsx';
 import Middle from './Middle';
+import Testimonials from './Testimonials';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
            <Top/>
            <Features/>
            <Middle/>
+           <Testimonials/>
         </div>
     )
 }

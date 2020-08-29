@@ -204,3 +204,48 @@ $body: 'Open Sans';
         }
     }
 }
+
+.testimonial-cont {
+    padding: 7% 7%;
+    background-color: $dark-blue-main-bg;
+    color: $white;
+    .quotes {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .card-col {
+        .card-test-cont {
+            width: 370px;
+            padding: 5%;
+            background-color: $dark-blue-test-bg;
+            @media screen and (max-width: 756px) {
+                margin-bottom: 30px;
+                margin-left: 7%;
+            }
+            .testimonial-text {
+                font-family: $body;
+                font-weight: $weight4;
+                font-size: 15px;
+                padding: 0 0 15px;
+            }
+            img {
+                width: 60px;
+                border-radius: 30px;
+            }
+            h4 {
+                margin-top: 10px;
+                margin-left: 15px;
+                font-family: $heading;
+                font-weight: $weight7;
+                font-size: 14px;
+            }
+            h6 {
+                margin-top: 5px;
+                margin-left: 15px;
+                font-family: $body;
+                font-weight: $weight4;
+                font-size: 14px;
+            }
+        }
+    }
+}

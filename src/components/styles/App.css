@@ -238,3 +238,55 @@
   margin-left: 10px;
   width: 20px;
 }
+
+.testimonial-cont {
+  padding: 7% 7%;
+  background-color: #181f2a;
+  color: white;
+}
+
+.testimonial-cont .quotes {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.testimonial-cont .card-col .card-test-cont {
+  width: 370px;
+  padding: 5%;
+  background-color: #202a3c;
+}
+
+@media screen and (max-width: 756px) {
+  .testimonial-cont .card-col .card-test-cont {
+    margin-bottom: 30px;
+    margin-left: 7%;
+  }
+}
+
+.testimonial-cont .card-col .card-test-cont .testimonial-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0 0 15px;
+}
+
+.testimonial-cont .card-col .card-test-cont img {
+  width: 60px;
+  border-radius: 30px;
+}
+
+.testimonial-cont .card-col .card-test-cont h4 {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.testimonial-cont .card-col .card-test-cont h6 {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
